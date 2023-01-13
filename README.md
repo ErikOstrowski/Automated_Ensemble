@@ -1,4 +1,4 @@
-# MIDL_BoundaryCAM
+# Automated Ensemble Exploration Framework for Weakly Supervised Segmentation in Medical Context
 
 <img src="img/frame.pdf" width="800" height="447"/>
 
@@ -35,26 +35,68 @@ nibabel
 Basic dataset folder structure, using Prostate dataset as an exemplary. (Note: Make sure to change the dataset directory accordingly inside the config file )
 
 
-## Train Decathlon Data
+## Run the Framework on Decathlon
 Please set all paths as mentioned at the top of every program.
 
-1.
-```python
-python deca_Classifier.py
+1. Train an image classifiers for generating CAMs
+```bash
+python deca_Classifier_res34.py
+python deca_Classifier_res50.py
+
 ```
-2.
+
+2. Generate CAMs
+```bash
+python3 GradCAM_RES34.py
+python GradCAM_RES350.py
 ```
-python deca_USS.py
+
+
+3. Evaluate the model with 'AND', 'OR', '>' or '<' combination
+```bash
+python deca_eval_AND.py
+python deca_eval_OR.py
+python deca_eval_bigger.py
+python deca_eval_smaller.py
+
 ```
-3.
+
+## Run the Framework on BraTS
+Please set all paths as mentioned at the top of every program.
+
+1. Covert BraTS dataset
+```bash
+python brats_transformation.py
 ```
-python deca_GradCAM.py
+
+2. Train an image classifiers for generating CAMs
+```bash
+python brats_Classifier_res34.py
+python brats_Classifier_res50.py
 ```
-4.
+
+
+3. Generate CAMs
+```bash
+python brats_GradCAM_res34.py
+python brats_GradCAM_res50.py
 ```
-python deca_BOUNDARY_FIT.py
+
+4. Evaluate the model with 'AND', 'OR', '>' or '<' combination
+```bash
+python brats_eval_AND.py
+python brats_eval_OR.py
+python brats_eval_bigger.py
+python brats_eval_smaller.py
+
 ```
-5.
-```
-python deca_eval.py
-```
+
+
+## Results
+Qualitative segmentation results on BraTS and DECATHLON
+
+<img src="img/boundary_results.pdf" width="800" height="447"/>
+
+
+## Acknowledgments
+We gratefully thank the authors of https://github.com/shjo-april/PuzzleCAM, https://github.com/bnsreenu/python_for_microscopists/tree/master/231_234_BraTa2020_Unet_segmentation and https://github.com/yaleCat/Grad-CAM-pytorch from which some parts of our code are inspired.
