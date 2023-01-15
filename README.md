@@ -37,14 +37,14 @@ Basic dataset folder structure, using Prostate dataset as an exemplary. (Note: M
 Please set all paths as mentioned at the top of every program.
 
 1. Train an image classifiers for generating CAMs
-```bash
+```
 python deca_Classifier_res34.py
 python deca_Classifier_res50.py
 
 ```
 
 2. Generate CAMs
-```bash
+```
 python3 GradCAM_RES34.py
 python GradCAM_RES350.py
 
@@ -52,7 +52,7 @@ python GradCAM_RES350.py
 
 
 3. Evaluate the model with 'AND', 'OR', '>' or '<' combination
-```bash
+```
 python deca_eval_AND.py
 python deca_eval_OR.py
 python deca_eval_bigger.py
@@ -65,13 +65,13 @@ python deca_eval_smaller.py
 Please set all paths as mentioned at the top of every program.
 
 1. Covert BraTS dataset
-```bash
+```
 python brats_transformation.py
 
 ```
 
 2. Train an image classifiers for generating CAMs
-```bash
+```
 python brats_Classifier_res34.py
 python brats_Classifier_res50.py
 
@@ -79,13 +79,13 @@ python brats_Classifier_res50.py
 
 
 3. Generate CAMs
-```bash
+```
 python brats_GradCAM_res34.py
 python brats_GradCAM_res50.py
 ```
 
 4. Evaluate the model with 'AND', 'OR', '>' or '<' combination
-```bash
+```
 python brats_eval_AND.py
 python brats_eval_OR.py
 python brats_eval_bigger.py
