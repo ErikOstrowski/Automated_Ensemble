@@ -1,6 +1,6 @@
 # Automated Ensemble Search Framework for Semantic Segmentation Using Medical Imaging Labels
 
-<img src="figures/frame.jpg" width="800" height="400"/>
+![Framework Overview](./figures/frames.jpg)
 
 ## Abstract
 Reliable classification and detection of certain medical conditions, in images, with state-of-the-art semantic segmentation networks require vast amounts of pixel-wise annotation. However, the public availability of such datasets is minimal. Therefore, semantic segmentation with image-level labels presents a promising alternative to this problem. Nevertheless, very few works have focused on evaluating this technique and its applicability to the medical sector.
@@ -47,6 +47,7 @@ python deca_Classifier_res50.py
 ```bash
 python3 GradCAM_RES34.py
 python GradCAM_RES350.py
+
 ```
 
 
@@ -57,6 +58,7 @@ python deca_eval_OR.py
 python deca_eval_bigger.py
 python deca_eval_smaller.py
 
+
 ```
 
 ## Run the Framework on BraTS
@@ -65,12 +67,14 @@ Please set all paths as mentioned at the top of every program.
 1. Covert BraTS dataset
 ```bash
 python brats_transformation.py
+
 ```
 
 2. Train an image classifiers for generating CAMs
 ```bash
 python brats_Classifier_res34.py
 python brats_Classifier_res50.py
+
 ```
 
 
@@ -93,8 +97,8 @@ python brats_eval_smaller.py
 ## Results
 Qualitative segmentation results on BraTS and DECATHLON
 
-<img src="figures/examples.jpg" width="800" height="600"/>
+![Examples](./figures/examples.jpg)
 
 
-## Acknowledgments
-We gratefully thank the authors of https://github.com/shjo-april/PuzzleCAM, https://github.com/bnsreenu/python_for_microscopists/tree/master/231_234_BraTa2020_Unet_segmentation and https://github.com/yaleCat/Grad-CAM-pytorch from which some parts of our code are inspired.
+
+
