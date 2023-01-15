@@ -1,6 +1,6 @@
 # Automated Ensemble Search Framework for Semantic Segmentation Using Medical Imaging Labels
 
-<img src="figures/frame.jpg" width="800" height="447"/>
+<img src="figures/frame.jpg" width="900" height="447"/>
 
 ## Abstract
 Reliable classification and detection of certain medical conditions, in images, with state-of-the-art semantic segmentation networks require vast amounts of pixel-wise annotation. However, the public availability of such datasets is minimal. Therefore, semantic segmentation with image-level labels presents a promising alternative to this problem. Nevertheless, very few works have focused on evaluating this technique and its applicability to the medical sector.
@@ -93,7 +93,7 @@ python brats_eval_smaller.py
 ## Results
 Qualitative segmentation results on BraTS and DECATHLON
 
-<img src="figures/examples.pdf" width="800" height="600"/>
+<img src="figures/examples.jpg" width="800" height="600"/>
 
 
 ## Acknowledgments
