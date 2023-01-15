@@ -97,7 +97,7 @@ python brats_eval_smaller.py
 ## Results
 Qualitative segmentation results on BraTS and DECATHLON
 
-![Examples](./figures/examples.jpg)
+![Examples](./figures/example.png)
 
 
 
