@@ -1,6 +1,6 @@
 # Automated Ensemble Search Framework for Semantic Segmentation Using Medical Imaging Labels
 
-![Framework Overview](./figures/frames.jpg)
+![Framework Overview](./figures/frame.jpg)
 
 ## Abstract
 Reliable classification and detection of certain medical conditions, in images, with state-of-the-art semantic segmentation networks require vast amounts of pixel-wise annotation. However, the public availability of such datasets is minimal. Therefore, semantic segmentation with image-level labels presents a promising alternative to this problem. Nevertheless, very few works have focused on evaluating this technique and its applicability to the medical sector.
