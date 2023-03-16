@@ -1,4 +1,4 @@
-# Automated Ensemble Search Framework for Semantic Segmentation Using Medical Imaging Labels
+# Exploring Weakly Supervised Semantic Segmentation Ensembles for Medical Imaging Systems
 
 ![Framework Overview](./figures/frame.png)
 
